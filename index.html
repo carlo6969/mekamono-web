@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MEKAMONO · Bisutería y grabado láser en Pachuca</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Esclavas, cadenas y collares de acero inoxidable con grabado láser al instante. Tienda en línea con envíos a todo México. Av. Revolución 503, Local C, Pachuca, Hgo.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="icon" href="img/avatar.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://dcdn-us.mitiendanube.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,500&family=Cinzel:wght@600&family=Montserrat:wght@600;800&family=Courier+Prime:wght@700&family=UnifrakturMaguntia&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0a0a0b;--ink2:#111113;--ink3:#19191c;--ink4:#232327;--line:rgba(255,255,255,.08);--line2:rgba(255,255,255,.15);--tx:#f3f0e9;--mut:#a3a09a;--gold:#d8b26a;--gold2:#f4dda6;--gold3:#a37b36;--lime:#d9ff3f;--bone:#f4f1ea;--paper:#fff;--dk:#121214;--dmut:#6c6a66;--fd:'Syne',system-ui,sans-serif;--fs:'Instrument Serif',Georgia,serif;--fb:'Inter',system-ui,-apple-system,sans-serif;--r:18px;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--tx);font:400 16px/1.6 var(--fb);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input,select,textarea{font:inherit;color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+em{font-family:var(--fs);font-style:italic;font-weight:400;letter-spacing:0;background:linear-gradient(100deg,#b98b3e 0%,#f6e2a9 38%,#c99a4a 62%,#f2d999 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.06em}
+.light em{background:linear-gradient(100deg,#8a6224,#c99a4a 45%,#7a5419);-webkit-background-clip:text;background-clip:text}
+h1,h2,h3,h4{font-family:var(--fd);font-weight:700;line-height:1.02;letter-spacing:-.025em}
+h2{font-size:clamp(34px,4.6vw,60px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 var(--fb);letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.eyebrow:before{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.eyebrow.lime{color:var(--lime)}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head h2{margin:16px 0 14px}
+.sec-head p{color:var(--mut);font-size:17px;max-width:600px}
+.sec-head.center{margin-inline:auto;text-align:center}.sec-head.center p{margin-inline:auto}.sec-head.center .eyebrow:after{content:"";width:26px;height:1px;background:currentColor;opacity:.7}
+.sec-head.row{max-width:none;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+section{position:relative}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 26px;border-radius:999px;font:600 15px/1 var(--fb);letter-spacing:.01em;transition:transform .25s var(--ease),box-shadow .25s,background .25s,color .25s;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(135deg,#f3dba0,#d4aa5c 48%,#b88a3e);color:#1a1307;box-shadow:0 10px 30px -10px rgba(216,178,106,.65),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 40px -12px rgba(216,178,106,.8),inset 0 1px 0 rgba(255,255,255,.5)}
+.btn-ghost{border:1px solid var(--line2);color:var(--tx);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.btn-lime{background:var(--lime);color:#111;box-shadow:0 10px 34px -10px rgba(217,255,63,.6)}
+.btn-lime:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--dk);color:#fff}
+.btn-dark:hover{background:#000;transform:translateY(-2px)}
+.btn-wa{background:#1fae5b;color:#fff}.btn-wa:hover{background:#18964d;transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.ico{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ap-strip{background:var(--lime);color:#111;text-align:center;font:600 12.5px/1 var(--fb);padding:9px 12px;letter-spacing:.02em}
+.ap-strip a{text-decoration:underline;margin-left:6px}
+.ticker{border-bottom:1px solid var(--line);background:#070708;overflow:hidden;white-space:nowrap}
+.tk-track{display:inline-flex;gap:48px;padding:11px 0;animation:tk 38s linear infinite;font:500 12.5px/1 var(--fb);letter-spacing:.08em;text-transform:uppercase;color:#cfcac0}
+.tk-track span{display:inline-flex;align-items:center;gap:48px}.tk-track span:after{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
+@keyframes tk{to{transform:translateX(-50%)}}
+.hd{position:sticky;top:0;z-index:60;background:rgba(10,10,11,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border-bottom:1px solid transparent;transition:border-color .3s,background .3s}
+.hd.sc{border-color:var(--line);background:rgba(10,10,11,.88)}
+.hd-in{display:flex;align-items:center;gap:28px;height:74px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.brand-ico{width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 1px var(--line2)}
+.brand-word{height:17px;width:auto;filter:invert(1)}
+.nav{display:flex;gap:4px;margin-inline:auto}
+.nav a{padding:10px 14px;border-radius:999px;font-size:14.5px;font-weight:500;color:#d9d5cc;transition:background .2s,color .2s;display:inline-flex;align-items:center;gap:7px}
+.nav a:hover{background:rgba(255,255,255,.06);color:#fff}
+.new{font:700 9.5px/1 var(--fb);letter-spacing:.08em;background:var(--lime);color:#111;padding:4px 6px;border-radius:5px}
+.hd-act{display:flex;align-items:center;gap:6px;margin-left:auto}
+.ib{position:relative;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;transition:background .2s}
+.ib:hover{background:rgba(255,255,255,.07)}
+.badge{position:absolute;top:4px;right:2px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;background:var(--gold);color:#1a1307;font:700 11px/19px var(--fb);text-align:center;transform:scale(0);transition:transform .3s var(--ease)}
+.badge.on{transform:scale(1)}
+.badge.bump{animation:bump .5s var(--ease)}
+@keyframes bump{40%{transform:scale(1.45)}}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--mut);padding:7px 12px;border:1px solid var(--line);border-radius:999px;margin-right:6px;white-space:nowrap}
+.status i{width:7px;height:7px;border-radius:50%;background:#777}
+.status.open i{background:#3ddc84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+.status.open b{color:#e9fbe9;font-weight:500}.status b{font-weight:500}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.menu-btn{display:none}
+.hero{padding:56px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(900px 520px at 78% 30%,rgba(216,178,106,.16),transparent 60%),radial-gradient(600px 400px at 10% 90%,rgba(217,255,63,.05),transparent 60%)}
+.hero-bg:after{content:"";position:absolute;inset:0;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+.hero-copy .eyebrow{color:var(--tx);letter-spacing:.16em}
+.hero-copy .eyebrow:before{display:none}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 14px var(--lime)}
+.hero h1{font-size:clamp(46px,6.6vw,96px);margin:22px 0 24px;letter-spacing:-.04em;line-height:.96}
+.hero h1 em{font-size:1.08em;display:inline-block}
+.hero p.lead{font-size:clamp(16.5px,1.45vw,19px);color:#c9c5bc;max-width:540px;margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;flex-wrap:wrap;gap:22px 34px;margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.proof div{display:flex;flex-direction:column;gap:3px}
+.proof b{font:700 22px/1 var(--fd);letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.proof span{font-size:13px;color:var(--mut)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:14px}
+.hero-visual{position:relative;aspect-ratio:4/4.7}
+.hv-main{position:absolute;inset:0 0 0 12%;border-radius:28px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px var(--line)}
+.hv-main img{width:100%;height:100%;object-fit:cover;transform:scale(1.04);transition:transform 1.2s var(--ease)}
+.hero-visual:hover .hv-main img{transform:scale(1.08)}
+.hv-main:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55))}
+.glass{background:rgba(18,18,20,.66);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line2);border-radius:20px;box-shadow:0 20px 50px -20px rgba(0,0,0,.8)}
+.hv-prod{position:absolute;left:0;top:13%;width:210px;padding:12px;display:flex;gap:12px;align-items:center;animation:fl 6s ease-in-out infinite;cursor:pointer}
+.hv-prod img{width:62px;height:62px;border-radius:12px;background:#fff;object-fit:cover}
+.hv-prod small{display:block;font-size:11px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.hv-prod b{display:block;font-size:14px;line-height:1.25;margin:2px 0}
+.hv-prod span{color:var(--gold2);font-weight:600;font-size:14px}
+.hv-plate{position:absolute;left:4%;bottom:9%;width:min(330px,72%);padding:18px 18px 14px;animation:fl 7s ease-in-out infinite reverse}
+.plate{position:relative;height:66px;border-radius:12px;background:linear-gradient(160deg,#f8e8b8,#d2a95c 40%,#f3dc9f 58%,#b5873b);box-shadow:inset 0 2px 0 rgba(255,255,255,.6),inset 0 -3px 6px rgba(120,80,20,.35),0 10px 24px -8px rgba(0,0,0,.7);display:grid;place-items:center;overflow:hidden}
+.plate .eng{font:400 30px/1 'Great Vibes',cursive;color:#3a2a10;text-shadow:0 1px 0 rgba(255,240,200,.6);white-space:nowrap;clip-path:inset(0 100% 0 0);animation:burn 6s steps(60) infinite}
+.plate .beam{position:absolute;top:0;bottom:0;width:2px;left:8%;background:#fff;box-shadow:0 0 12px 4px rgba(217,255,63,.9),0 0 30px 8px rgba(255,255,255,.5);animation:beam 6s steps(60) infinite;opacity:0}
+@keyframes burn{0%{clip-path:inset(0 92% 0 8%)}55%,92%{clip-path:inset(0 8% 0 8%)}100%{clip-path:inset(0 8% 0 8%);opacity:0}}
+@keyframes beam{0%{left:8%;opacity:1}55%{left:92%;opacity:1}56%,100%{opacity:0}}
+.hv-plate small{display:flex;justify-content:space-between;margin-top:12px;font-size:12px;color:var(--mut)}
+.hv-plate small b{color:var(--lime);font-weight:600}
+.hv-rate{position:absolute;right:-8px;top:5%;padding:12px 16px;display:flex;align-items:center;gap:12px;animation:fl 8s ease-in-out infinite}
+.hv-rate b{font:700 30px/1 var(--fd)}
+.hv-rate small{display:block;font-size:11.5px;color:var(--mut);line-height:1.3}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.vals{border-block:1px solid var(--line);background:var(--ink2);overflow:hidden;white-space:nowrap}
+.vals .tk-track{animation-duration:46s;padding:22px 0;color:var(--tx);font:600 15px/1 var(--fd);letter-spacing:.02em;text-transform:none;gap:56px}
+.vals .tk-track span{gap:56px}.vals .tk-track span:after{content:"✦";width:auto;height:auto;background:none;color:var(--gold);font-size:13px}
+.cats{padding:110px 0 40px}
+.cat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.cat{position:relative;border-radius:var(--r);overflow:hidden;background:#fff;aspect-ratio:3/4;display:flex;flex-direction:column;justify-content:flex-end;color:var(--dk);transition:transform .4s var(--ease),box-shadow .4s;box-shadow:0 0 0 1px var(--line)}
+.cat img{position:absolute;inset:0;width:100%;height:78%;object-fit:contain;padding:14px;transition:transform .6s var(--ease)}
+.cat:hover{transform:translateY(-6px);box-shadow:0 26px 50px -24px rgba(216,178,106,.55)}
+.cat:hover img{transform:scale(1.07) rotate(-2deg)}
+.cat div{position:relative;padding:14px 16px 16px;background:linear-gradient(0deg,#fff 70%,rgba(255,255,255,0))}
+.cat b{font:700 17px/1.1 var(--fd);display:block}
+.cat span{font-size:12.5px;color:var(--dmut)}
+.cat:after{content:"→";position:absolute;right:14px;bottom:16px;width:28px;height:28px;border-radius:50%;background:var(--dk);color:#fff;display:grid;place-items:center;font-size:13px;transform:scale(.6);opacity:0;transition:.3s var(--ease)}
+.cat:hover:after{transform:none;opacity:1}
+.feat{padding:70px 0 110px}
+.car-nav{display:flex;gap:8px}
+.car-nav button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;transition:.2s}
+.car-nav button:hover{border-color:var(--gold);color:var(--gold)}
+.car{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 54px)/4);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+.car::-webkit-scrollbar{display:none}
+.car .pc{scroll-snap-align:start}
+.store{background:var(--bone);color:var(--dk);padding:110px 0;border-radius:40px 40px 0 0}
+.store .eyebrow{color:var(--gold3)}
+.store .sec-head p{color:var(--dmut)}
+.store-bar{display:flex;gap:12px;align-items:center;margin-bottom:26px;flex-wrap:wrap}
+.sbox{flex:1;min-width:220px;position:relative}
+.sbox input{width:100%;height:52px;border-radius:999px;border:1px solid #e0dbd0;background:#fff;padding:0 20px 0 50px;font-size:15px;outline:none;transition:border-color .2s,box-shadow .2s}
+.sbox input:focus{border-color:var(--gold3);box-shadow:0 0 0 4px rgba(216,178,106,.2)}
+.sbox svg{position:absolute;left:18px;top:16px;color:var(--dmut)}
+.sel{height:52px;border-radius:999px;border:1px solid #e0dbd0;background:#fff;padding:0 40px 0 20px;font-size:14.5px;appearance:none;background-image:linear-gradient(45deg,transparent 50%,#555 50%),linear-gradient(135deg,#555 50%,transparent 50%);background-position:calc(100% - 22px) 23px,calc(100% - 17px) 23px;background-size:5px 5px;background-repeat:no-repeat;outline:none;cursor:pointer}
+.fbtn{display:none;height:52px;padding:0 20px;border-radius:999px;border:1px solid #e0dbd0;background:#fff;align-items:center;gap:8px;font-weight:600;font-size:14.5px}
+.store-grid{display:grid;grid-template-columns:250px 1fr;gap:34px;align-items:start}
+.filters{position:sticky;top:96px;display:flex;flex-direction:column;gap:26px}
+.fg h5{font:700 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--dmut);margin-bottom:12px}
+.fcats{display:flex;flex-direction:column;gap:2px}
+.fcats button{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:12px;font-size:15px;font-weight:500;text-align:left;transition:background .2s}
+.fcats button span{font-size:12.5px;color:var(--dmut);background:#ebe6dc;border-radius:999px;padding:2px 9px}
+.fcats button:hover{background:#ebe6dc}
+.fcats button.on{background:var(--dk);color:#fff}.fcats button.on span{background:rgba(255,255,255,.15);color:#fff}
+.ftones{display:flex;gap:8px;flex-wrap:wrap}
+.ftones button{display:flex;align-items:center;gap:8px;padding:8px 13px 8px 9px;border-radius:999px;border:1px solid #e0dbd0;background:#fff;font-size:14px;font-weight:500;transition:.2s}
+.ftones button.on{border-color:var(--dk);box-shadow:inset 0 0 0 1px var(--dk)}
+.sw{width:18px;height:18px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15);flex-shrink:0}
+.rng{width:100%;accent-color:#b88a3e}
+.rng-v{display:flex;justify-content:space-between;font-size:13px;color:var(--dmut);margin-top:6px}
+.tg-row{display:flex;justify-content:space-between;align-items:center;padding:6px 0;font-size:15px;font-weight:500;cursor:pointer}
+.tgl{appearance:none;width:44px;height:26px;border-radius:999px;background:#d8d2c6;position:relative;cursor:pointer;transition:background .2s;flex-shrink:0}
+.tgl:after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .25s var(--ease)}
+.tgl:checked{background:var(--dk)}.tgl:checked:after{transform:translateX(18px)}
+.fclear{font-size:14px;font-weight:600;text-decoration:underline;color:var(--dmut);align-self:flex-start}
+.res-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;font-size:14px;color:var(--dmut);gap:10px;flex-wrap:wrap}
+.achips{display:flex;gap:6px;flex-wrap:wrap}
+.achips button{background:#fff;border:1px solid #e0dbd0;border-radius:999px;padding:5px 12px;font-size:13px;font-weight:500}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pc{position:relative;background:#fff;border-radius:var(--r);overflow:hidden;color:var(--dk);transition:transform .35s var(--ease),box-shadow .35s;box-shadow:0 1px 0 rgba(0,0,0,.04),0 0 0 1px rgba(0,0,0,.04);animation:pin .5s var(--ease) both}
+@keyframes pin{from{opacity:0;transform:translateY(14px)}}
+.pc:hover{transform:translateY(-5px);box-shadow:0 30px 50px -28px rgba(60,40,10,.45),0 0 0 1px rgba(0,0,0,.05)}
+.pc-media{position:relative;display:block;width:100%;aspect-ratio:1;background:#fff;overflow:hidden}
+.pc-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8%;transition:opacity .5s,transform .7s var(--ease)}
+.pc-media img.alt{opacity:0}
+.pc:hover .pc-media img.alt{opacity:1}.pc:hover .pc-media img:first-child:not(:only-of-type){opacity:0}
+.pc:hover .pc-media img{transform:scale(1.05)}
+.pc-tags{position:absolute;top:12px;left:12px;display:flex;flex-direction:column;align-items:flex-start;gap:6px;z-index:2}
+.tg{font:700 10.5px/1 var(--fb);letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:999px;font-style:normal}
+.tg-l{background:var(--dk);color:var(--lime)}.tg-w{background:#fff0d6;color:#8a5a00}.tg-x{background:#eee;color:#777}
+.pc-body{padding:4px 18px 18px}
+.pc-cat{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dmut)}
+.pc-name{font:600 16px/1.25 var(--fb);letter-spacing:-.01em;margin:5px 0 10px;min-height:2.5em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc-row{display:flex;justify-content:space-between;align-items:center}
+.pc-price{font:700 18px/1 var(--fd)}.pc-price small{font:500 12px var(--fb);color:var(--dmut)}
+.pc-dots{display:flex}.pc-dots i{width:15px;height:15px;border-radius:50%;margin-left:-4px;box-shadow:0 0 0 2px #fff,inset 0 0 0 1px rgba(0,0,0,.12)}
+.pc-add{position:absolute;right:14px;top:14px;width:42px;height:42px;border-radius:50%;background:var(--dk);color:#fff;font-size:22px;line-height:1;display:grid;place-items:center;opacity:0;transform:translateY(-6px) scale(.9);transition:.3s var(--ease);z-index:2}
+.pc:hover .pc-add{opacity:1;transform:none}
+.pc-add:hover{background:#000;color:var(--lime)}
+.pc-add[disabled]{display:none}
+.car .pc,.car .pc-body{background:#fff}
+.more-wrap{text-align:center;margin-top:34px}
+.empty{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--dmut)}
+.lab{padding:120px 0;background:radial-gradient(1000px 600px at 50% 0%,rgba(217,255,63,.07),transparent 60%),var(--ink)}
+.lab-app{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;align-items:start}
+.lab-stage{position:sticky;top:96px;background:linear-gradient(180deg,#131315,#0d0d0f);border:1px solid var(--line);border-radius:28px;padding:18px;overflow:hidden}
+.stage-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.stage-hint{font-size:12.5px;color:var(--mut)}
+.seg{display:inline-flex;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:999px;padding:4px}
+.seg button{padding:8px 18px;border-radius:999px;font-size:14px;font-weight:500;color:var(--mut);transition:.25s}
+.seg button.on{background:var(--tx);color:#111}
+.seg.sm button{padding:7px 13px;font-size:13px}
+.stage-box{position:relative;border-radius:20px;overflow:hidden;perspective:1200px;touch-action:none}
+#labCv{width:100%;height:auto;aspect-ratio:1000/640;display:block;transition:transform .5s var(--ease);cursor:grab;border-radius:18px}
+#labCv.flip{transform:rotateY(90deg);transition:transform .22s ease-in}
+.laser-flash{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--lx,50%) var(--ly,50%),rgba(217,255,63,.18),transparent 30%);opacity:0;transition:opacity .3s}
+.burning .laser-flash{opacity:1}
+.stage-actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.stage-actions .btn{flex:1;height:50px}
+.lab-panel{display:flex;flex-direction:column;gap:14px}
+.step{background:var(--ink2);border:1px solid var(--line);border-radius:22px;padding:20px}
+.step h4{font:700 16px/1 var(--fd);display:flex;align-items:center;gap:10px;margin-bottom:16px;letter-spacing:-.01em}
+.step h4 span{width:26px;height:26px;border-radius:50%;background:var(--lime);color:#111;display:grid;place-items:center;font:700 13px/1 var(--fb)}
+.step h4 small{font:500 13px var(--fb);color:var(--mut)}
+.pieces{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.pieces button{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 4px 10px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02);font-size:12px;font-weight:500;color:var(--mut);transition:.2s;text-align:center;line-height:1.2}
+.pieces button svg{width:34px;height:34px}
+.pieces button:hover{border-color:var(--line2);color:var(--tx)}
+.pieces button.on{border-color:var(--gold);color:var(--gold2);background:rgba(216,178,106,.08)}
+.opt-row{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.opt-row:empty{display:none}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--line2);font-size:13.5px;font-weight:500;color:#d6d2c9;transition:.2s}
+.chip:hover{border-color:var(--gold)}
+.chip.on{background:var(--tx);color:#111;border-color:var(--tx)}
+.metals{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.metals button{display:flex;align-items:center;gap:10px;padding:12px;border-radius:14px;border:1px solid var(--line);font-size:14px;font-weight:500;transition:.2s}
+.metals button.on{border-color:var(--gold);background:rgba(216,178,106,.08)}
+.metals i{width:26px;height:26px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2)}
+.m-g{background:linear-gradient(135deg,#f6e2a8,#c99a45 55%,#8f6a28)}.m-s{background:linear-gradient(135deg,#fff,#c9ccd1 55%,#8d9198)}.m-b{background:linear-gradient(135deg,#55555a,#111)}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);background:rgba(255,255,255,.04);border-radius:14px;padding:4px;margin-bottom:16px}
+.tabs button{padding:10px 4px;border-radius:10px;font-size:13.5px;font-weight:600;color:var(--mut);transition:.2s}
+.tabs button.on{background:var(--ink4);color:var(--tx);box-shadow:0 1px 0 rgba(255,255,255,.06) inset}
+.tab{display:none;flex-direction:column;gap:12px}.tab.on{display:flex}
+.fl{display:flex;flex-direction:column;gap:6px;font-size:12.5px;color:var(--mut);font-weight:500}
+.fl input,.fl select,.fl textarea{height:48px;border-radius:12px;border:1px solid var(--line2);background:rgba(255,255,255,.03);padding:0 14px;font-size:15.5px;color:var(--tx);outline:none;transition:border-color .2s}
+.fl textarea{height:auto;padding:12px 14px;resize:vertical;min-height:70px}
+.fl input:focus,.fl select:focus,.fl textarea:focus{border-color:var(--gold)}
+.fl input[type=date]{color-scheme:dark}
+.fonts{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.fonts button{padding:10px 4px 8px;border-radius:12px;border:1px solid var(--line);transition:.2s;display:flex;flex-direction:column;align-items:center;gap:4px}
+.fonts button b{font-size:22px;font-weight:400;line-height:1.1;color:var(--tx)}
+.fonts button small{font-size:10.5px;color:var(--mut)}
+.fonts button.on{border-color:var(--gold);background:rgba(216,178,106,.08)}
+.sl-row{display:flex;gap:14px;flex-wrap:wrap}
+.sl-row label{flex:1;min-width:120px;font-size:12.5px;color:var(--mut);display:flex;flex-direction:column;gap:4px}
+.sl-row input{accent-color:var(--lime);width:100%}
+.ideas{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--mut)}
+.ideas button{padding:6px 11px;border-radius:999px;background:rgba(217,255,63,.08);color:var(--lime);font-size:12.5px;font-weight:600;border:1px solid rgba(217,255,63,.2)}
+.ideas button:hover{background:rgba(217,255,63,.16)}
+.dfmts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.dfmts button{padding:12px;border-radius:12px;border:1px solid var(--line);text-align:left;font-size:14px;transition:.2s}
+.dfmts button small{display:block;font-size:11px;color:var(--mut);margin-top:2px}
+.dfmts button:hover{border-color:var(--gold)}
+.chk{display:flex;gap:8px;align-items:center;font-size:13.5px;color:var(--mut)}
+.chk input{accent-color:var(--lime);width:16px;height:16px}
+.icons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.icons button{aspect-ratio:1.2;border-radius:14px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:11.5px;color:var(--mut);transition:.2s}
+.icons button svg{width:28px;height:28px;fill:currentColor}
+.icons button.on{border-color:var(--gold);color:var(--gold2);background:rgba(216,178,106,.08)}
+.drop{position:relative;border:1.5px dashed var(--line2);border-radius:16px;padding:22px;text-align:center;transition:.2s;display:flex;flex-direction:column;gap:4px}
+.drop:hover,.drop.ov{border-color:var(--lime);background:rgba(217,255,63,.04)}
+.drop input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.drop b{font-size:15px}.drop span{font-size:12.5px;color:var(--mut)}
+.link{font-size:13px;font-weight:600;color:var(--gold2);text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
+.ph-ctrl{display:flex;flex-direction:column;gap:12px}
+.ph-btns{display:flex;gap:18px}
+.lab-sum{background:linear-gradient(160deg,rgba(216,178,106,.14),rgba(216,178,106,.03));border:1px solid rgba(216,178,106,.3);border-radius:22px;padding:20px}
+.sum-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.sum-top small{font-size:12px;color:var(--mut);display:block}
+.sum-top strong{font:700 34px/1.1 var(--fd);display:block;letter-spacing:-.02em}
+.sum-top span{font-size:13px;color:#d4cfc4}
+.sum-badge{font-size:11.5px!important;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--lime);color:#111!important;padding:6px 10px;border-radius:999px;white-space:nowrap}
+.sum-spec{font-size:13.5px;color:#d4cfc4;margin:12px 0 16px;line-height:1.5}
+.sum-btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sum-btns .btn{height:50px;padding:0 14px;font-size:14px}
+.sum-note{font-size:11.5px;color:var(--mut);margin-top:12px}
+.engr{padding:120px 0;background:var(--ink2);border-block:1px solid var(--line)}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.steps3 article{background:var(--ink);border:1px solid var(--line);border-radius:24px;overflow:hidden;transition:transform .4s var(--ease),border-color .4s}
+.steps3 article:hover{transform:translateY(-6px);border-color:rgba(216,178,106,.4)}
+.steps3 .im{aspect-ratio:4/3;overflow:hidden}
+.steps3 img{width:100%;height:100%;object-fit:cover;object-position:center 70%;transition:transform .8s var(--ease)}
+.steps3 article:hover img{transform:scale(1.06)}
+.steps3 .tx{padding:22px 24px 26px}
+.steps3 .n{font:700 13px/1 var(--fb);color:var(--lime);letter-spacing:.1em}
+.steps3 h3{font-size:24px;margin:10px 0 8px}
+.steps3 p{color:var(--mut);font-size:15px}
+.stories{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:70px}
+.story{position:relative;aspect-ratio:9/15;border-radius:20px;overflow:hidden;cursor:pointer;box-shadow:0 0 0 1px var(--line)}
+.story img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.story:hover img{transform:scale(1.07)}
+.story:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.85))}
+.story div{position:absolute;left:16px;right:16px;bottom:16px;z-index:2}
+.story b{font:700 17px/1.1 var(--fd);display:block}
+.story span{font-size:12.5px;color:#d3cfc6;line-height:1.35;display:block;margin-top:5px}
+.story i{position:absolute;top:14px;left:14px;z-index:2;font:700 10.5px/1 var(--fb);letter-spacing:.1em;text-transform:uppercase;font-style:normal;background:rgba(0,0,0,.5);backdrop-filter:blur(6px);padding:6px 9px;border-radius:999px}
+.about{padding:130px 0}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about-img{position:relative;border-radius:30px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 0 0 1px var(--line)}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.about-img figcaption{position:absolute;left:18px;bottom:18px;padding:10px 14px;font-size:13px;font-weight:600}
+.about-copy h2{margin:16px 0 20px}
+.about-copy>p{color:#c9c5bc;font-size:17.5px;max-width:560px}
+.tl{list-style:none;margin:34px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:t}
+.tl li{position:relative;padding:26px 14px 0 0;border-top:1px solid var(--line2)}
+.tl li:before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--ink);border:2px solid var(--gold)}
+.tl li:last-child:before{background:var(--gold);box-shadow:0 0 16px var(--gold)}
+.tl b{font:700 15px/1.2 var(--fd);display:block;margin-bottom:6px}
+.tl span{font-size:13.5px;color:var(--mut);line-height:1.45;display:block}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.stats div{background:var(--ink2);border:1px solid var(--line);border-radius:18px;padding:18px}
+.stats b{font:700 34px/1 var(--fd);letter-spacing:-.03em;display:block;color:var(--gold2)}
+.stats span{font-size:13px;color:var(--mut);display:block;margin-top:6px;line-height:1.35}
+.revs{padding:110px 0;background:var(--bone);color:var(--dk)}
+.revs .eyebrow{color:var(--gold3)}
+.rev-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.rev-top h2{margin-top:16px}
+.gscore{display:flex;align-items:center;gap:18px;background:#fff;border-radius:22px;padding:18px 24px;box-shadow:0 0 0 1px rgba(0,0,0,.05)}
+.gscore b{font:700 50px/1 var(--fd);letter-spacing:-.04em}
+.gscore .stars{font-size:18px;color:#e2a722}
+.gscore small{display:block;font-size:13px;color:var(--dmut)}
+.rev-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.rev{background:#fff;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px;box-shadow:0 0 0 1px rgba(0,0,0,.04);transition:transform .35s var(--ease)}
+.rev:hover{transform:translateY(-4px)}
+.rev .stars{color:#e2a722;font-size:14px}
+.rev p{font-size:15px;line-height:1.55;flex:1}
+.rev footer{display:flex;align-items:center;gap:10px;font-size:13.5px}
+.av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font:700 14px var(--fb);color:#fff;flex-shrink:0}
+.rev footer small{display:block;color:var(--dmut);font-size:12px}
+.gal{padding:110px 0 120px}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
+.gal-grid>*{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 0 0 1px var(--line)}
+.gal-grid>*:nth-child(1){grid-row:span 2;grid-column:span 2}
+.gal-grid>*:nth-child(4){grid-row:span 2}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease),filter .4s}
+.gal-grid>*:hover img{transform:scale(1.06)}
+.visit{padding:120px 0;background:var(--ink2);border-top:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.vcard{background:var(--ink);border:1px solid var(--line);border-radius:26px;padding:30px}
+.vrow{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.vrow:last-of-type{border:0}
+.vrow svg{flex-shrink:0;color:var(--gold);margin-top:2px}
+.vrow b{display:block;font-weight:600}
+.vrow span,.vrow a{color:var(--mut);font-size:15px}
+.vrow a:hover{color:var(--gold2)}
+.hours{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px}
+.hours td{padding:7px 0;color:var(--mut)}
+.hours td:last-child{text-align:right}
+.hours tr.today td{color:var(--tx);font-weight:600}
+.hours tr.today td:first-child:after{content:"Hoy";margin-left:8px;font:700 10px/1 var(--fb);letter-spacing:.08em;background:var(--lime);color:#111;padding:3px 6px;border-radius:5px;vertical-align:2px}
+.vbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.vbtns .btn{flex:1;height:50px;padding:0 18px}
+.map{border-radius:20px;overflow:hidden;height:260px;margin-bottom:22px;box-shadow:0 0 0 1px var(--line)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+.agenda h3{font-size:26px;margin-bottom:6px}
+.agenda>p{color:var(--mut);font-size:15px;margin-bottom:18px}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:14px}
+.days button{padding:10px 2px;border-radius:12px;border:1px solid var(--line);text-align:center;font-size:12px;color:var(--mut);transition:.2s;line-height:1.3}
+.days button b{display:block;font:700 18px/1.1 var(--fd);color:var(--tx)}
+.days button.on{border-color:var(--gold);background:rgba(216,178,106,.1)}
+.times{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;max-height:118px;overflow:auto}
+.times button{padding:8px 12px;border-radius:10px;border:1px solid var(--line);font-size:13.5px;transition:.2s}
+.times button.on{background:var(--tx);color:#111;border-color:var(--tx)}
+.ag-f{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.faq{padding:120px 0}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
+.faq-list details{border-bottom:1px solid var(--line);padding:6px 0}
+.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;font:600 18px/1.35 var(--fb)}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";font:300 28px/1 var(--fb);color:var(--gold);transition:transform .3s}
+.faq-list details[open] summary:after{transform:rotate(45deg)}
+.faq-list p{color:var(--mut);padding:0 40px 20px 0;font-size:15.5px}
+.cta-band{margin:0 auto 110px;border-radius:32px;padding:56px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;background:radial-gradient(600px 300px at 90% 0%,rgba(217,255,63,.18),transparent 60%),linear-gradient(135deg,#1a1712,#0f0e0c);border:1px solid rgba(216,178,106,.25);overflow:hidden;position:relative}
+.cta-band h2{font-size:clamp(30px,3.6vw,48px)}
+.cta-band p{color:var(--mut);margin-top:12px}
+.cta-band .cta{justify-content:flex-end}
+.ft{border-top:1px solid var(--line);padding:70px 0 120px;background:#070708}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+.ft .brand-word{height:20px;margin:18px 0 14px}
+.ft p{color:var(--mut);font-size:14.5px;max-width:320px}
+.ft h6{font:700 12px/1 var(--fb);letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:16px}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14.5px}
+.ft ul a{color:#d6d2c9}.ft ul a:hover{color:var(--gold2)}
+.pay{display:flex;gap:6px;flex-wrap:wrap;margin-top:20px}
+.pay span{font:700 11px/1 var(--fb);letter-spacing:.04em;padding:7px 10px;border-radius:7px;border:1px solid var(--line2);color:#cfcac0}
+.ft-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:50px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}
+.ft-bot a{color:var(--lime)}
+.fab{position:fixed;right:22px;bottom:24px;z-index:55;width:60px;height:60px;border-radius:50%;background:#1fae5b;color:#fff;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(31,174,91,.7);transition:transform .3s var(--ease)}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;fill:#fff}
+.fab:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1fae5b;animation:ring 2.4s infinite}
+@keyframes ring{to{transform:scale(1.6);opacity:0}}
+.mbar{display:none}
+.ov{position:fixed;inset:0;z-index:90}
+.ov[hidden]{display:none}
+.ov-bg{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);animation:fade .3s}
+@keyframes fade{from{opacity:0}}
+.x{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:26px;line-height:1;transition:background .2s;flex-shrink:0}
+.x:hover{background:rgba(127,127,127,.15)}
+.pm-card{position:absolute;inset:4vh 0 auto;margin:auto;width:min(1080px,94vw);max-height:92vh;overflow:auto;background:#fff;color:var(--dk);border-radius:28px;animation:pop .45s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.98)}}
+.pm-card>.x{position:absolute;top:14px;right:14px;z-index:3;background:#f2efe9}
+.pm-grid{display:grid;grid-template-columns:1.05fr 1fr}
+.pm-gal{padding:22px;position:sticky;top:0;align-self:start}
+.pm-main{aspect-ratio:1;border-radius:20px;overflow:hidden;background:#fff;cursor:zoom-in;position:relative;box-shadow:0 0 0 1px rgba(0,0,0,.05)}
+.pm-main img{width:100%;height:100%;object-fit:contain;transition:transform .3s,opacity .3s}
+.pm-thumbs{display:flex;gap:8px;margin-top:12px;overflow-x:auto;scrollbar-width:none}
+.pm-thumbs button{width:70px;height:70px;border-radius:12px;overflow:hidden;flex-shrink:0;box-shadow:0 0 0 1px rgba(0,0,0,.08);background:#fff;transition:.2s}
+.pm-thumbs button.on{box-shadow:0 0 0 2px var(--dk)}
+.pm-thumbs img{width:100%;height:100%;object-fit:contain}
+.pm-info{padding:40px 36px 34px 14px;display:flex;flex-direction:column;gap:18px}
+.pm-info .pc-cat{font-size:12px}
+.pm-info h3{font-size:clamp(26px,3vw,36px);margin-top:-8px}
+.pm-price{display:flex;align-items:baseline;gap:12px;font:700 30px/1 var(--fd)}
+.pm-price small{font:500 13px var(--fb);color:var(--dmut)}
+.stock{font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:7px}
+.stock i{width:8px;height:8px;border-radius:50%;background:#1fae5b}
+.stock.low i{background:#e59a12}.stock.out i{background:#bbb}
+.og h5{font:600 13px/1 var(--fb);margin-bottom:10px}
+.og h5 span{color:var(--dmut);font-weight:500}
+.ovals{display:flex;gap:8px;flex-wrap:wrap}
+.ovals button{min-width:48px;padding:10px 14px;border-radius:12px;border:1px solid #ddd8ce;font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px;transition:.2s;background:#fff}
+.ovals button:hover{border-color:var(--dk)}
+.ovals button.on{border-color:var(--dk);box-shadow:inset 0 0 0 1px var(--dk)}
+.ovals button.off{color:#aaa;text-decoration:line-through}
+.eng-box{background:#f6f3ed;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}
+.eng-box h5{font:700 14px/1.2 var(--fb);display:flex;align-items:center;gap:8px}
+.eng-box input{height:46px;border-radius:12px;border:1px solid #ddd8ce;background:#fff;padding:0 14px;font-size:15px;outline:none;width:100%}
+.eng-box input:focus{border-color:var(--gold3)}
+.eng-box .link{color:#8a6224}
+.buy{display:flex;gap:10px}
+.qty{display:flex;align-items:center;border:1px solid #ddd8ce;border-radius:999px;height:54px}
+.qty button{width:44px;height:100%;font-size:20px}
+.qty span{min-width:26px;text-align:center;font-weight:600}
+.buy .btn{flex:1}
+.pm-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pm-trust div{background:#f6f3ed;border-radius:14px;padding:12px;font-size:12.5px;line-height:1.35;color:#4b4945}
+.pm-trust b{display:block;color:var(--dk);font-size:13px;margin-bottom:2px}
+.pm-desc{font-size:14.5px;color:#4b4945;white-space:pre-line;line-height:1.6;max-height:150px;overflow:hidden;position:relative}
+.pm-desc.open{max-height:none}
+.pm-desc:not(.open):after{content:"";position:absolute;left:0;right:0;bottom:0;height:60px;background:linear-gradient(transparent,#fff)}
+.drawer .ov-bg{background:rgba(0,0,0,.5)}
+.dr-card{position:absolute;top:0;right:0;bottom:0;width:min(440px,100vw);background:#fff;color:var(--dk);display:flex;flex-direction:column;animation:slide .45s var(--ease)}
+@keyframes slide{from{transform:translateX(100%)}}
+.dr-head{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid #eee9df}
+.dr-head h3{font-size:24px}
+.dr-head h3 span{font:500 15px var(--fb);color:var(--dmut)}
+.dr-items{flex:1;overflow:auto;padding:8px 24px}
+.ci{display:grid;grid-template-columns:74px 1fr auto;gap:14px;padding:16px 0;border-bottom:1px solid #f0ece4;align-items:start}
+.ci img{width:74px;height:74px;border-radius:12px;object-fit:contain;background:#f8f6f2}
+.ci h4{font:600 14.5px/1.3 var(--fb);letter-spacing:0}
+.ci small{display:block;font-size:12.5px;color:var(--dmut);margin-top:3px;line-height:1.4}
+.ci .q{display:inline-flex;align-items:center;border:1px solid #e3ded4;border-radius:999px;margin-top:8px;height:32px}
+.ci .q button{width:30px;height:100%;font-size:16px}
+.ci .q span{min-width:20px;text-align:center;font-size:13.5px;font-weight:600}
+.ci .pr{font:700 15px var(--fd);text-align:right}
+.ci .rm{display:block;margin-top:8px;font-size:12px;color:var(--dmut);text-decoration:underline;margin-left:auto}
+.dr-empty{text-align:center;padding:60px 10px;color:var(--dmut)}
+.dr-empty b{display:block;font:700 20px var(--fd);color:var(--dk);margin:14px 0 6px}
+.dr-foot{padding:18px 24px 24px;border-top:1px solid #eee9df;display:flex;flex-direction:column;gap:12px;background:#fbfaf7}
+.dlv{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.dlv label{border:1px solid #e3ded4;border-radius:14px;padding:12px;cursor:pointer;font-size:13.5px;line-height:1.3;background:#fff;transition:.2s}
+.dlv label b{display:block;font-size:14px}
+.dlv label small{color:var(--dmut)}
+.dlv input{display:none}
+.dlv label:has(input:checked){border-color:var(--dk);box-shadow:inset 0 0 0 1px var(--dk)}
+.dr-foot input{height:46px;border-radius:12px;border:1px solid #e3ded4;padding:0 14px;font-size:15px;outline:none;background:#fff;width:100%}
+.tot{display:flex;justify-content:space-between;align-items:baseline;font-size:15px}
+.tot b{font:700 26px var(--fd)}
+.dr-foot .btn{width:100%}
+.dr-note{font-size:12px;color:var(--dmut);text-align:center}
+.srch .ov-bg{background:rgba(5,5,6,.85)}
+.srch-card{position:relative;width:min(760px,92vw);margin:9vh auto 0;animation:pop .35s var(--ease)}
+.srch-in{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--gold);padding:10px 4px}
+.srch-in input{flex:1;background:none;border:0;outline:none;font:600 clamp(24px,4vw,40px)/1.2 var(--fd);color:#fff;letter-spacing:-.02em}
+.srch-in input::placeholder{color:#55534f}
+.srch-res{margin-top:18px;display:grid;grid-template-columns:1fr 1fr;gap:10px;max-height:62vh;overflow:auto}
+.srch-res button{display:flex;gap:14px;align-items:center;padding:10px;border-radius:16px;text-align:left;background:rgba(255,255,255,.04);transition:background .2s}
+.srch-res button:hover{background:rgba(255,255,255,.09)}
+.srch-res img{width:60px;height:60px;border-radius:12px;background:#fff;object-fit:contain}
+.srch-res b{display:block;font-size:15px;font-weight:600}
+.srch-res span{font-size:13.5px;color:var(--gold2)}
+.srch-sug{margin-top:22px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--mut);font-size:14px}
+.srch-sug button{padding:8px 14px;border-radius:999px;border:1px solid var(--line2);color:#ddd}
+.lb-card{position:absolute;inset:0;display:grid;place-items:center;padding:5vh 4vw;pointer-events:none}
+.lb-card img{max-width:100%;max-height:90vh;border-radius:16px;pointer-events:auto;animation:pop .35s var(--ease)}
+.lb .x{position:absolute;top:18px;right:18px;color:#fff;background:rgba(255,255,255,.1);z-index:2}
+.mm{position:fixed;inset:0;z-index:80;background:rgba(10,10,11,.97);backdrop-filter:blur(10px);padding:100px 28px 40px;display:flex;flex-direction:column;gap:6px;transform:translateY(-100%);transition:transform .5s var(--ease)}
+.mm.on{transform:none}
+.mm a{font:700 34px/1.25 var(--fd);letter-spacing:-.02em;padding:6px 0;border-bottom:1px solid var(--line)}
+.mm .btn{margin-top:20px}
+.toast{position:fixed;left:50%;bottom:30px;z-index:100;transform:translate(-50%,140%);background:var(--tx);color:#111;padding:14px 18px 14px 14px;border-radius:16px;display:flex;align-items:center;gap:12px;font-size:14.5px;font-weight:500;box-shadow:0 20px 50px -10px rgba(0,0,0,.6);transition:transform .45s var(--ease),visibility .45s;max-width:92vw;visibility:hidden}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+.toast img{width:44px;height:44px;border-radius:10px;object-fit:contain;background:#fff}
+.toast button{font-weight:700;text-decoration:underline;margin-left:6px}
+[data-rv]{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+[data-rv].in{opacity:1;transform:none}
+@media (max-width:1100px){.nav{display:none}.menu-btn{display:grid}.status{display:none}.cat-grid{grid-template-columns:repeat(3,1fr)}.car{grid-auto-columns:calc((100% - 36px)/3)}.lab-app{grid-template-columns:1fr}.lab-stage{position:relative;top:0}.rev-grid{grid-template-columns:repeat(2,1fr)}.rev-grid .rev:nth-child(5){grid-column:span 2}.stories{grid-template-columns:repeat(3,1fr)}.stories .story:nth-child(n+4){display:none}.ft-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero-visual{max-width:560px;width:100%;margin-inline:auto}.store-grid{grid-template-columns:1fr}.filters{display:none;position:fixed;inset:auto 0 0 0;top:auto;z-index:95;background:#fff;padding:24px 22px 30px;border-radius:26px 26px 0 0;max-height:82vh;overflow:auto;box-shadow:0 -20px 60px rgba(0,0,0,.35)}.filters.on{display:flex;animation:up .4s var(--ease)}.fbtn{display:inline-flex}.pgrid{grid-template-columns:repeat(2,1fr);gap:12px}.about-grid,.faq-grid,.visit-grid,.cta-band{grid-template-columns:1fr}.cta-band .cta{justify-content:flex-start}.steps3{grid-template-columns:1fr}.pm-grid{grid-template-columns:1fr}.pm-gal{position:relative;padding:16px 16px 0}.pm-info{padding:22px 20px 28px}.tl{grid-template-columns:1fr 1fr;row-gap:24px}}
+@keyframes up{from{transform:translateY(100%)}}
+@media (max-width:640px){.wrap{width:calc(100% - 32px)}h2{font-size:34px}.hd-in{height:64px;gap:10px}.brand-word{height:14px}.brand-ico{width:34px;height:34px}.hero{padding:34px 0 70px}.hero h1{font-size:46px}.proof{gap:18px 26px}.hv-main{inset:0 0 0 6%}.hv-prod{width:190px;top:6%}.hv-rate{right:0;top:auto;bottom:34%}.cats{padding:80px 0 20px}.cat-grid{grid-template-columns:repeat(2,1fr);gap:10px}.car{grid-auto-columns:72%}.store{padding:80px 0;border-radius:28px 28px 0 0}.pc-body{padding:2px 12px 14px}.pc-name{font-size:14px}.pc-price{font-size:16px}.pc-add{opacity:1;transform:none;width:36px;height:36px;right:10px;top:10px;font-size:19px}.pieces{grid-template-columns:repeat(5,1fr);gap:5px}.pieces button{font-size:10.5px;padding:10px 2px 8px}.pieces button svg{width:28px;height:28px}.fonts{grid-template-columns:repeat(3,1fr)}.lab,.engr,.about,.revs,.gal,.visit,.faq{padding:80px 0}.lab-stage{padding:10px;border-radius:22px;position:sticky;top:64px;z-index:5}.stage-actions .btn{height:44px;font-size:13.5px;padding:0 12px}.stage-top{margin-bottom:8px}.stage-hint{display:none}.stories{grid-template-columns:repeat(2,1fr);margin-top:50px}.stories .story:nth-child(n+3){display:none}.rev-grid{grid-template-columns:1fr}.rev-grid .rev:nth-child(5){grid-column:auto}.gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}.gal-grid>*:nth-child(4){grid-row:span 1}.days{grid-template-columns:repeat(4,1fr)}.ag-f{grid-template-columns:1fr}.cta-band{padding:34px 24px;margin-bottom:80px}.ft-grid{grid-template-columns:1fr}.vcard{padding:22px}.fab{display:none}.mbar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:10px;right:10px;bottom:10px;z-index:56;background:rgba(18,18,20,.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line2);border-radius:20px;padding:6px;box-shadow:0 14px 40px -10px rgba(0,0,0,.8)}.mbar a,.mbar button{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;font-weight:600;color:#cfcac0;padding:7px 0;border-radius:14px;position:relative}.mbar .badge{top:0;right:calc(50% - 22px)}.mbar a.hl{background:var(--lime);color:#111}.srch-res{grid-template-columns:1fr}.dfmts{grid-template-columns:1fr}.toast{bottom:90px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}[data-rv]{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="ap-strip">Vista previa creada por <b>APARECE</b> · Plan Destaca <a href="https://www.apareceweb.com" target="_blank" rel="noopener">apareceweb.com</a></div>
+<div class="ticker" aria-hidden="true"><div class="tk-track"><span>Grabado láser en 15 min en tienda</span><span>Acero inoxidable · no cambia de color</span><span>Envíos a todo México</span><span>Pide en línea y recoge en tienda</span><span>Av. Revolución 503, Local C · Pachuca</span><span>Grabado láser en 15 min en tienda</span><span>Acero inoxidable · no cambia de color</span><span>Envíos a todo México</span><span>Pide en línea y recoge en tienda</span><span>Av. Revolución 503, Local C · Pachuca</span></div></div>
+
+<header class="hd" id="hd">
+<div class="wrap hd-in">
+<a href="#inicio" class="brand" aria-label="MEKAMONO, ir al inicio"><img class="brand-ico" src="img/avatar.webp" alt="" width="40" height="40"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO" width="151" height="17"></a>
+<nav class="nav"><a href="#tienda">Tienda</a><a href="#lab">Personaliza <span class="new">LAB</span></a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a></nav>
+<div class="hd-act">
+<span class="status" data-status><i></i><b>Pachuca, Hgo.</b></span>
+<button class="ib" data-search aria-label="Buscar"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+<button class="ib" data-cart aria-label="Abrir carrito"><svg class="ico" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-count>0</span></button>
+<button class="ib menu-btn" data-menu aria-label="Abrir menú"><svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</div>
+</div>
+</header>
+<nav class="mm" id="mm"><a href="#tienda">Tienda</a><a href="#lab">Personaliza</a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a><a class="btn btn-gold" href="#tienda">Comprar ahora</a></nav>
+
+<main id="inicio">
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="wrap hero-grid">
+<div class="hero-copy">
+<span class="eyebrow"><i class="dot"></i>Bisutería + grabado láser · Pachuca</span>
+<h1>No creamos accesorios. <em>Inmortalizamos</em> símbolos.</h1>
+<p class="lead">Esclavas, cadenas y collares de acero inoxidable que no cambian de color. Graba un nombre, una fecha, una frase… o una mirada. En tienda lo grabamos en 15 minutos.</p>
+<div class="cta"><a class="btn btn-gold" href="#tienda">Comprar ahora <svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="#lab">Diseña tu grabado</a></div>
+<div class="proof">
+<div><b>5.0 <span class="stars">★★★★★</span></b><span>21 reseñas en Google</span></div>
+<div><b>+2,800</b><span>seguidores en Instagram</span></div>
+<div><b>15 min</b><span>grabado en tienda</span></div>
+</div>
+</div>
+<div class="hero-visual">
+<figure class="hv-main"><img src="img/vitrina.webp" alt="Vitrina de joyería Mekamono con collar dorado" fetchpriority="high"></figure>
+<div class="hv-prod glass" data-hero-prod></div>
+<div class="hv-rate glass"><b>5.0</b><div><span class="stars">★★★★★</span><small>Calificación<br>en Google</small></div></div>
+<div class="hv-plate glass"><div class="plate"><span class="eng">Ana &amp; Leo · 29.12.25</span><i class="beam"></i></div><small><span>Esclava personalizada</span><b>● Grabando…</b></small></div>
+</div>
+</div>
+</section>
+
+<div class="vals" aria-hidden="true"><div class="tk-track"><span>Acero inoxidable 316L</span><span>Hipoalergénico</span><span>No cambia de color</span><span>Resistente al agua y al sudor</span><span>Grabado frente y reverso</span><span>Envíos a todo México</span><span>Acero inoxidable 316L</span><span>Hipoalergénico</span><span>No cambia de color</span><span>Resistente al agua y al sudor</span><span>Grabado frente y reverso</span><span>Envíos a todo México</span></div></div>
+
+<section class="cats" id="explora">
+<div class="wrap">
+<div class="sec-head" data-rv><span class="eyebrow">La colección</span><h2>Tu próximo accesorio <em>favorito</em> está aquí</h2></div>
+<div class="cat-grid" id="catGrid" data-rv></div>
+</div>
+</section>
+
+<section class="feat">
+<div class="wrap">
+<div class="sec-head row" data-rv><div><span class="eyebrow">Personalizados</span><h2>Piezas que <em>llevan tu historia</em></h2></div><div class="car-nav"><button data-car="-1" aria-label="Anterior">←</button><button data-car="1" aria-label="Siguiente">→</button></div></div>
+<div class="car" id="featCar"></div>
+</div>
+</section>
+
+<section class="store light" id="tienda">
+<div class="wrap">
+<div class="sec-head" data-rv><span class="eyebrow">Tienda en línea</span><h2>Toda la <em>colección</em></h2><p>Acero inoxidable en dorado, plateado y negro. Pide en línea y recoge en tienda, o te lo enviamos a cualquier parte de México.</p></div>
+<div class="store-bar">
+<label class="sbox"><span class="sr">Buscar en la tienda</span><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="sq" type="search" placeholder="Busca esclavas, cadenas, anillos…"></label>
+<select class="sel" id="ssort" aria-label="Ordenar"><option value="rel">Destacados</option><option value="pa">Precio: menor a mayor</option><option value="pd">Precio: mayor a menor</option><option value="az">Nombre A–Z</option></select>
+<button class="fbtn" id="fopen"><svg class="ico" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filtros</button>
+</div>
+<div class="store-grid">
+<aside class="filters" id="filters">
+<div class="fg"><h5>Categoría</h5><div class="fcats" id="fcats"></div></div>
+<div class="fg"><h5>Color</h5><div class="ftones" id="ftones"></div></div>
+<div class="fg"><h5>Precio máximo</h5><input class="rng" type="range" id="fmax"><div class="rng-v"><span id="fminv"></span><b id="fmaxv"></b></div></div>
+<div class="fg"><label class="tg-row">Solo disponibles<input class="tgl" type="checkbox" id="favail"></label><label class="tg-row">Personalizables<input class="tgl" type="checkbox" id="fpers"></label></div>
+<button class="fclear" id="fclear">Limpiar filtros</button>
+<button class="btn btn-dark" id="fdone" style="display:none">Ver resultados</button>
+</aside>
+<div>
+<div class="res-info"><span id="rcount"></span><div class="achips" id="achips"></div></div>
+<div class="pgrid" id="pgrid"></div>
+<div class="more-wrap"><button class="btn btn-dark" id="pmore">Ver más piezas</button></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="lab" id="lab">
+<div class="wrap">
+<div class="sec-head center" data-rv><span class="eyebrow lime">Mekamono Lab · Simulador</span><h2>Diseña tu grabado <em>y míralo en vivo</em></h2><p>Elige la pieza y el acabado; escribe nombres, fechas o coordenadas, agrega un ícono o sube una foto. Así se vería grabado con láser antes de pedirlo.</p></div>
+<div class="lab-app">
+<div class="lab-stage">
+<div class="stage-top"><div class="seg" id="sideSeg"><button class="on" data-side="front">Frente</button><button data-side="back">Reverso</button></div><span class="stage-hint" id="stageHint">Mueve el cursor sobre la pieza para ver el brillo</span></div>
+<div class="stage-box" id="stageBox"><canvas id="labCv" width="1000" height="640" aria-label="Vista previa del grabado"></canvas><div class="laser-flash"></div></div>
+<div class="stage-actions"><button class="btn btn-lime" id="labBurn">⚡ Ver grabado láser</button><button class="btn btn-ghost" id="labDl"><svg class="ico" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Descargar diseño</button></div>
+</div>
+<div class="lab-panel">
+<div class="step"><h4><span>1</span>Elige tu pieza</h4><div class="pieces" id="labPieces"></div><div class="opt-row" id="labSize"></div></div>
+<div class="step"><h4><span>2</span>Acabado</h4><div class="metals" id="labMetal"><button data-metal="Dorado" class="on"><i class="m-g"></i>Dorado</button><button data-metal="Plateado"><i class="m-s"></i>Plateado</button><button data-metal="Negro"><i class="m-b"></i>Negro</button></div></div>
+<div class="step"><h4><span>3</span>Tu diseño <small id="sideLbl">· Frente</small></h4>
+<div class="tabs" id="labTabs"><button class="on" data-tab="txt">Texto</button><button data-tab="date">Fecha</button><button data-tab="ico">Ícono</button><button data-tab="pho">Foto</button></div>
+<div class="tab on" data-pane="txt">
+<label class="fl">Línea 1<input id="l1" maxlength="26" placeholder="Ej. Ana & Leo" autocomplete="off"></label>
+<label class="fl">Línea 2<input id="l2" maxlength="32" placeholder="Ej. 29.12.25" autocomplete="off"></label>
+<div class="fonts" id="labFonts"></div>
+<div class="sl-row"><label>Tamaño<input type="range" id="fsz" min="55" max="135" value="100"></label><label>Espaciado<input type="range" id="fsp" min="0" max="16" value="1"></label></div>
+<div class="ideas"><span>Ideas:</span><button data-idea="pareja">Pareja</button><button data-idea="romanos">Números romanos</button><button data-idea="coord">Coordenadas</button><button data-idea="mascota">Mascota</button><button data-idea="medica">Alerta médica</button></div>
+</div>
+<div class="tab" data-pane="date">
+<label class="fl">Fecha especial<input type="date" id="dIn" value="2025-12-29"></label>
+<div class="dfmts" id="dFmts"></div>
+<label class="chk"><input type="checkbox" id="dL2" checked>Colocarla en la línea 2</label>
+</div>
+<div class="tab" data-pane="ico"><div class="icons" id="labIcons"></div></div>
+<div class="tab" data-pane="pho">
+<div class="drop" id="drop"><input type="file" id="phIn" accept="image/*" aria-label="Subir foto"><b>Sube una foto</b><span>Ojos, rostro, mascota, huella o un dibujo · JPG o PNG</span></div>
+<button class="link" id="phSample">Probar con el logo de Mekamono</button>
+<div class="ph-ctrl" id="phCtrl" hidden>
+<div class="seg sm" id="phStyle"><button class="on" data-st="trama">Tramado</button><button data-st="suave">Suave</button><button data-st="silueta">Silueta</button></div>
+<div class="sl-row"><label>Zoom<input type="range" id="phZ" min="100" max="320" value="100"></label><label>Brillo<input type="range" id="phB" min="-70" max="70" value="0"></label><label>Contraste<input type="range" id="phC" min="60" max="220" value="125"></label></div>
+<div class="ph-btns"><button class="link" id="phInv">Invertir tonos</button><button class="link" id="phDel">Quitar foto</button></div>
+</div>
+</div>
+</div>
+<div class="lab-sum">
+<div class="sum-top"><div><small>Precio de referencia</small><strong id="labPrice">$299</strong><span id="labPname"></span></div><span class="sum-badge">Grabado incluido</span></div>
+<p class="sum-spec" id="labSpec"></p>
+<div class="sum-btns"><button class="btn btn-gold" id="labCart">Agregar al carrito</button><button class="btn btn-wa" id="labWa">Cotizar por WhatsApp</button></div>
+<p class="sum-note">Vista de referencia: el resultado real depende de la pieza y del tamaño del grabado. Revisamos tu diseño contigo antes de grabar.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="engr" id="grabado">
+<div class="wrap">
+<div class="sec-head" data-rv><span class="eyebrow">Grabado láser al instante</span><h2>Tu idea, grabada <em>en 15 minutos</em></h2><p>Visítanos, elige tu pieza y la grabamos al momento. ¿Prefieres pedir en línea? La producimos en 3 a 5 días hábiles y te la enviamos a todo México.</p></div>
+<div class="steps3">
+<article data-rv><div class="im"><img src="img/proceso-3.webp" alt="Esclava con nombre grabado" loading="lazy"></div><div class="tx"><span class="n">01</span><h3>Elige tu pieza</h3><p>Esclavas, placas, medallas, brazaletes, bolígrafos y más, en dorado, plateado o negro.</p></div></article>
+<article data-rv><div class="im"><img src="img/proceso-1.webp" alt="Brazalete dorado con fecha grabada" loading="lazy"></div><div class="tx"><span class="n">02</span><h3>Dinos qué grabar</h3><p>Un nombre, una fecha, coordenadas, una frase… o una foto: una mirada, una huella o tu mascota.</p></div></article>
+<article data-rv><div class="im"><img src="img/proceso-2.webp" alt="Brazaletes grabados con números romanos" loading="lazy"></div><div class="tx"><span class="n">03</span><h3>Lo grabamos con láser</h3><p>Grabado preciso y duradero al frente y al reverso. Listo para llevar o para regalar.</p></div></article>
+</div>
+<div class="stories">
+<a class="story" data-rv href="https://www.instagram.com/reel/DTjtImdDGy6/" target="_blank" rel="noopener" aria-label="Ver reel en Instagram"><img src="img/r-duo.webp" alt="" loading="lazy"><i>Para dos</i><div><b>Esclavas en dúo</b><span>Para parejas, amigos o personas que siempre se eligen.</span></div></a>
+<a class="story" data-rv href="https://www.instagram.com/reel/DfBRy6kxxOt/" target="_blank" rel="noopener" aria-label="Ver reel en Instagram"><img src="img/r-mirada.webp" alt="" loading="lazy"><i>Foto</i><div><b>Grabado de mirada</b><span>Los ojos de esa persona especial, contigo siempre.</span></div></a>
+<a class="story" data-rv href="https://www.instagram.com/reel/Dfspou-zgPR/" target="_blank" rel="noopener" aria-label="Ver reel en Instagram"><img src="img/r-laser.webp" alt="" loading="lazy"><i>Láser</i><div><b>Fotos en placa</b><span>Del recuerdo a la pieza en minutos.</span></div></a>
+<a class="story" data-rv href="https://www.instagram.com/reel/Dd2XXgBJdyl/" target="_blank" rel="noopener" aria-label="Ver reel en Instagram"><img src="img/r-cita.webp" alt="" loading="lazy"><i>Plan</i><div><b>Una cita diferente</b><span>Escojan sus accesorios y personalícenlos juntos.</span></div></a>
+<a class="story" data-rv href="https://www.instagram.com/reel/DeLGOlNxaph/" target="_blank" rel="noopener" aria-label="Ver reel en Instagram"><img src="img/r-regalo.webp" alt="" loading="lazy"><i>Regalos</i><div><b>¿Qué regalarle?</b><span>Nuestras mejores opciones para sorprender.</span></div></a>
+</div>
+</div>
+</section>
+
+<section class="about" id="nosotros">
+<div class="wrap about-grid">
+<figure class="about-img" data-rv><img src="img/hermanos.webp" alt="Los hermanos fundadores de Mekamono" loading="lazy"></figure>
+<div class="about-copy" data-rv>
+<span class="eyebrow">Nuestra historia</span>
+<h2>Dos hermanos, <em>monos y cadenas.</em></h2>
+<p>Somos un negocio de dos hermanos que apenas está construyendo su historia. Empezamos en Facebook, luego en tianguis y bazares… hasta tener nuestra propia casa en Av. Revolución 503. Misma esencia, las mismas ganas de siempre.</p>
+<ol class="tl"><li><b>Facebook</b><span>Las primeras piezas y los primeros clientes.</span></li><li><b>Tianguis y bazares</b><span>Aprendimos lo que la gente quiere llevar.</span></li><li><b>Primer local</b><span>Un espacio propio en Pachuca.</span></li><li><b>2026 · Nueva casa</b><span>Av. Revolución 503, Local C.</span></li></ol>
+<div class="stats"><div><b data-num="2879">2,879</b><span>seguidores en Instagram</span></div><div><b>5.0</b><span>de calificación en Google</span></div><div><b data-num="65">65</b><span>piezas en la tienda en línea</span></div></div>
+</div>
+</div>
+</section>
+
+<section class="revs light" id="opiniones">
+<div class="wrap">
+<div class="rev-top" data-rv><div><span class="eyebrow">Opiniones reales</span><h2>Lo que dicen <em>en Google</em></h2></div><a class="gscore" href="https://www.google.com/maps/place/Mekamono/@20.1195575,-98.7377294,17z/data=!4m8!3m7!1s0x85d109d6744c46b1:0xa00669da6c641ca5!8m2!3d20.1195575!4d-98.7377294!9m1!1b1!16s%2Fg%2F11w_rj6br_" target="_blank" rel="noopener"><b>5.0</b><div><span class="stars">★★★★★</span><small>21 reseñas en Google Maps</small></div></a></div>
+<div class="rev-grid" id="revGrid"></div>
+</div>
+</section>
+
+<section class="gal" id="galeria">
+<div class="wrap">
+<div class="sec-head row" data-rv><div><span class="eyebrow">Nuestra casa</span><h2>Ven a <em>conocernos</em></h2></div><a class="btn btn-ghost" href="https://www.instagram.com/mekamono" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>@mekamono</a></div>
+<div class="gal-grid" data-rv>
+<button data-lb="img/letrero.webp"><img src="img/letrero.webp" alt="Letrero de Mekamono en su nuevo local" loading="lazy"></button>
+<button data-lb="img/grabado.webp"><img src="img/grabado.webp" alt="Grabado láser al instante en tienda" loading="lazy"></button>
+<button data-lb="img/mono.webp"><img src="img/mono.webp" alt="Mono de peluche con cadena, mascota de Mekamono" loading="lazy"></button>
+<button data-lb="img/exhibidor.webp"><img src="img/exhibidor.webp" alt="Exhibidor de collares" loading="lazy"></button>
+<button data-lb="img/fachada.webp"><img src="img/fachada.webp" alt="Fachada de Mekamono en Av. Revolución 503" loading="lazy"></button>
+<a href="https://www.instagram.com/reel/Df3hGsYzKmI/" target="_blank" rel="noopener"><img src="img/r-selfie.webp" alt="Interior de la tienda" loading="lazy"></a>
+<a href="https://www.instagram.com/reel/DW2Sw_zCep_/" target="_blank" rel="noopener"><img src="img/r-historia.webp" alt="Mekamono, nuestra historia" loading="lazy"></a>
+</div>
+</div>
+</section>
+
+<section class="visit" id="visitanos">
+<div class="wrap">
+<div class="sec-head" data-rv><span class="eyebrow">Visítanos</span><h2>Te esperamos en <em>Av. Revolución</em></h2><p>Ven a ver las piezas en persona y llévate tu grabado el mismo día.</p></div>
+<div class="visit-grid">
+<div class="vcard" data-rv>
+<div class="map"><iframe title="Mapa de Mekamono" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Mekamono,+Av.+Revoluci%C3%B3n+503+Local+C,+Periodistas,+42060+Pachuca+de+Soto,+Hgo.&z=17&output=embed"></iframe></div>
+<div class="vrow"><svg class="ico" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Av. Revolución 503, Local C</b><span>Col. Periodistas, 42060 Pachuca de Soto, Hgo.</span></div></div>
+<div class="vrow"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="flex:1"><b data-status-txt>Horario</b><table class="hours" id="hours"></table></div></div>
+<div class="vrow"><svg class="ico" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><b>WhatsApp y teléfono</b><a href="tel:+525659206025">56 5920 6025</a> · <a href="mailto:mekamono.mx@gmail.com">mekamono.mx@gmail.com</a></div></div>
+<div class="vbtns"><a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Mekamono+Av.+Revoluci%C3%B3n+503+Local+C+Pachuca">Cómo llegar</a><a class="btn btn-ghost" data-wa="Hola MEKAMONO, tengo una pregunta 🐵" href="#">Escríbenos</a></div>
+</div>
+<div class="vcard agenda" data-rv>
+<span class="eyebrow">Agenda de grabado</span>
+<h3 style="margin-top:14px">Aparta tu visita</h3>
+<p>Elige día y hora; te confirmamos por WhatsApp y tenemos tu pieza lista para grabar.</p>
+<div class="days" id="agDays"></div>
+<div class="times" id="agTimes"></div>
+<div class="ag-f"><label class="fl">Tu nombre<input id="agName" placeholder="Nombre" autocomplete="name"></label><label class="fl">¿Qué quieres grabar?<select id="agWhat"><option>Esclava con nombre o fecha</option><option>Collar con foto o mirada</option><option>Placa militar</option><option>Esclavas en dúo</option><option>Regalo (aún no sé qué)</option></select></label></div>
+<button class="btn btn-wa" style="width:100%" id="agSend"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.22 3.73c1.57.68 2.19.74 2.98.62a2.54 2.54 0 0 0 1.67-1.18 2.07 2.07 0 0 0 .14-1.18c-.06-.1-.22-.16-.47-.28z"/></svg>Agendar por WhatsApp</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="faq" id="faq">
+<div class="wrap faq-grid">
+<div class="sec-head" data-rv><span class="eyebrow">Preguntas frecuentes</span><h2>Todo lo que <em>necesitas saber</em></h2><p>¿Otra duda? Escríbenos por WhatsApp y te respondemos.</p></div>
+<div class="faq-list" data-rv>
+<details open><summary>¿De qué material son las piezas?</summary><p>Trabajamos acero inoxidable de alta calidad (316L en la mayoría de nuestras esclavas y cadenas): resistente al agua y al sudor, hipoalergénico y no cambia de color ni pierde brillo.</p></details>
+<details><summary>¿Cuánto tarda el grabado?</summary><p>En tienda lo grabamos al momento, en unos 15 minutos. En pedidos en línea, el tiempo de producción es de 3 a 5 días hábiles.</p></details>
+<details><summary>¿Qué puedo grabar?</summary><p>Nombres, fechas, frases, coordenadas, iniciales, números romanos, íconos y también fotografías: una mirada, una huella, tu mascota o un dibujo. Muchas piezas se pueden grabar al frente y al reverso.</p></details>
+<details><summary>¿Hacen envíos?</summary><p>Sí, enviamos a todo México. También puedes pedir en línea y recoger en la tienda de Av. Revolución 503, Local C, en Pachuca.</p></details>
+<details><summary>¿Qué formas de pago aceptan?</summary><p>En nuestra tienda en línea aceptamos tarjetas Visa, Mastercard y American Express, tarjetas de débito y pago en OXXO.</p></details>
+<details><summary>¿Cómo cuido mi pieza?</summary><p>El acero inoxidable es muy resistente. Para mantener el brillo, límpiala con un paño suave y guárdala por separado para evitar rayones.</p></details>
+</div>
+</div>
+</section>
+
+<div class="wrap"><div class="cta-band" data-rv><div><span class="eyebrow lime">Hazlo tuyo</span><h2 style="margin-top:14px">Lleva contigo <em>palabras que importan.</em></h2><p>Graba tu historia y hazla eterna.</p></div><div class="cta"><a class="btn btn-lime" href="#lab">Diseñar mi pieza</a><a class="btn btn-ghost" href="#tienda">Ver tienda</a></div></div></div>
+</main>
+
+<footer class="ft">
+<div class="wrap">
+<div class="ft-grid">
+<div><img class="brand-ico" src="img/avatar.webp" alt="" width="44" height="44" style="width:44px;height:44px"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO"><p>En Mekamono no creamos accesorios, inmortalizamos símbolos. Bisutería de acero inoxidable con grabado láser en Pachuca, Hgo.</p><div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>OXXO</span></div></div>
+<div><h6>Tienda</h6><ul id="ftCats"></ul></div>
+<div><h6>Ayuda</h6><ul><li><a href="#lab">Simulador de grabado</a></li><li><a href="#grabado">Servicio de grabado</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#visitanos">Agenda tu visita</a></li></ul></div>
+<div><h6>Contacto</h6><ul><li><a href="#" data-wa="Hola MEKAMONO 🐵">WhatsApp 56 5920 6025</a></li><li><a href="mailto:mekamono.mx@gmail.com">mekamono.mx@gmail.com</a></li><li><a href="https://www.instagram.com/mekamono" target="_blank" rel="noopener">Instagram @mekamono</a></li><li><a href="#visitanos">Av. Revolución 503, Local C</a></li></ul></div>
+</div>
+<div class="ft-bot"><span>© 2026 MEKAMONO · Pachuca de Soto, Hidalgo</span><span>Sitio de demostración creado por <a href="https://www.apareceweb.com" target="_blank" rel="noopener">APARECE</a></span></div>
+</div>
+</footer>
+
+<a class="fab" href="#" data-wa="Hola MEKAMONO 🐵, vi su página y me interesa una pieza" aria-label="Escríbenos por WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.22 3.73c1.57.68 2.19.74 2.98.62a2.54 2.54 0 0 0 1.67-1.18 2.07 2.07 0 0 0 .14-1.18c-.06-.1-.22-.16-.47-.28z"/></svg></a>
+<nav class="mbar"><a href="#inicio"><svg class="ico" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9H4z"/></svg>Inicio</a><a href="#tienda"><svg class="ico" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Tienda</a><a href="#lab" class="hl"><svg class="ico" viewBox="0 0 24 24"><path d="m13 3-8 11h6l-1 7 8-11h-6z"/></svg>Diseñar</a><button data-cart><svg class="ico" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Carrito<span class="badge" data-count>0</span></button></nav>
+
+<div class="ov" id="pm" hidden><div class="ov-bg" data-close></div><div class="pm-card" role="dialog" aria-modal="true" aria-label="Detalle del producto"><button class="x" data-close aria-label="Cerrar">×</button><div class="pm-grid"><div class="pm-gal"><div class="pm-main" id="pmMain"><img id="pmImg" alt=""></div><div class="pm-thumbs" id="pmThumbs"></div></div><div class="pm-info" id="pmInfo"></div></div></div></div>
+<div class="ov drawer" id="cart" hidden><div class="ov-bg" data-close></div><div class="dr-card" role="dialog" aria-modal="true" aria-label="Carrito"><div class="dr-head"><h3>Tu carrito <span data-count2></span></h3><button class="x" data-close aria-label="Cerrar">×</button></div><div class="dr-items" id="crItems"></div><div class="dr-foot" id="crFoot"></div></div></div>
+<div class="ov srch" id="srch" hidden><div class="ov-bg" data-close></div><div class="srch-card"><div class="srch-in"><input id="srIn" placeholder="¿Qué estás buscando?" autocomplete="off"><button class="x" data-close aria-label="Cerrar" style="color:#fff">×</button></div><div class="srch-sug" id="srSug"></div><div class="srch-res" id="srRes"></div></div></div>
+<div class="ov lb" id="lb" hidden><div class="ov-bg" data-close></div><button class="x" data-close aria-label="Cerrar">×</button><div class="lb-card"><img id="lbImg" alt=""></div></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="productos.js"></script>
+<script src="app.js"></script>
+<script src="lab.js"></script>
+</body>
+</html>
