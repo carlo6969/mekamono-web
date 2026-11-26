@@ -488,7 +488,7 @@ section{position:relative}
 .tot b{font:700 26px var(--fd)}
 .dr-foot .btn{width:100%}
 .dr-note{font-size:12px;color:var(--dmut);text-align:center}
-@media (max-width:640px){.hd-act a.ib[href="panel/"]{display:none}}
+.nav a.nav-login{border:1px solid currentColor;border-radius:999px;padding:6px 14px;opacity:.9}
 .cr-ship{display:flex;flex-direction:column;gap:8px}
 .sh-msg{font-size:12.5px;color:var(--dmut);line-height:1.4}
 .sh-opt{display:flex;align-items:center;gap:10px;border:1px solid #e3ded4;border-radius:14px;padding:10px 12px;background:#fff;cursor:pointer;font-size:13.5px;transition:.2s}
@@ -538,9 +538,8 @@ section{position:relative}
 <header class="hd" id="hd">
 <div class="wrap hd-in">
 <a href="#inicio" class="brand" aria-label="MEKAMONO, ir al inicio"><img class="brand-ico" src="img/avatar.webp" alt="" width="40" height="40"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO" width="151" height="17"></a>
-<nav class="nav"><a href="#tienda">Tienda</a><a href="#lab">Personaliza <span class="new">LAB</span></a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a></nav>
+<nav class="nav"><a href="#tienda">Tienda</a><a href="#lab">Personaliza <span class="new">LAB</span></a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a><a href="panel/" class="nav-login">Log In</a></nav>
 <div class="hd-act">
-<a class="ib" href="panel/" aria-label="Acceso al panel" title="Acceso"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
 <span class="status" data-status><i></i><b>Pachuca, Hgo.</b></span>
 <button class="ib" data-search aria-label="Buscar"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
 <button class="ib" data-cart aria-label="Abrir carrito"><svg class="ico" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-count>0</span></button>
@@ -548,7 +547,7 @@ section{position:relative}
 </div>
 </div>
 </header>
-<nav class="mm" id="mm"><a href="#tienda">Tienda</a><a href="#lab">Personaliza</a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a><a href="panel/">Acceso</a><a class="btn btn-gold" href="#tienda">Comprar ahora</a></nav>
+<nav class="mm" id="mm"><a href="#tienda">Tienda</a><a href="#lab">Personaliza</a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a><a href="panel/">Log In</a><a class="btn btn-gold" href="#tienda">Comprar ahora</a></nav>
 
 <main id="inicio">
 <section class="hero">
@@ -763,7 +762,7 @@ section{position:relative}
 <div class="ft-grid">
 <div><img class="brand-ico" src="img/avatar.webp" alt="" width="44" height="44" style="width:44px;height:44px"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO"><p>En Mekamono no creamos accesorios, inmortalizamos símbolos. Bisutería de acero inoxidable con grabado láser en Pachuca, Hgo.</p><div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>OXXO</span></div></div>
 <div><h6>Tienda</h6><ul id="ftCats"></ul></div>
-<div><h6>Ayuda</h6><ul><li><a href="#lab">Simulador de grabado</a></li><li><a href="#grabado">Servicio de grabado</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#visitanos">Agenda tu visita</a></li><li><a href="panel/">Acceso</a></li></ul></div>
+<div><h6>Ayuda</h6><ul><li><a href="#lab">Simulador de grabado</a></li><li><a href="#grabado">Servicio de grabado</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#visitanos">Agenda tu visita</a></li><li><a href="panel/">Log In</a></li></ul></div>
 <div><h6>Contacto</h6><ul><li><a href="#" data-wa="Hola MEKAMONO 🐵">WhatsApp 56 5920 6025</a></li><li><a href="mailto:mekamono.mx@gmail.com">mekamono.mx@gmail.com</a></li><li><a href="https://www.instagram.com/mekamono" target="_blank" rel="noopener">Instagram @mekamono</a></li><li><a href="#visitanos">Av. Revolución 503, Local C</a></li></ul></div>
 </div>
 <div class="ft-bot"><span>© 2026 MEKAMONO · Pachuca de Soto, Hidalgo</span><span>Sitio de demostración creado por <a href="https://www.apareceweb.com" target="_blank" rel="noopener">APARECE</a></span></div>

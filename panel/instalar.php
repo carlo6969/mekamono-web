@@ -34,6 +34,13 @@ if (!mk_config()) {
 }
 
 mk_instalar_schema();
+// Los productos y ajustes se cargan en cuanto la base está conectada, para que la web ya lea el catálogo
+// del panel aunque el Dueño cree su cuenta después (por ejemplo, el día de la capacitación).
+if (!(int) val('SELECT COUNT(*) FROM productos')) {
+    mk_importar_catalogo(dirname(__DIR__) . '/productos.js');
+    foreach (['negocio' => 'MEKAMONO', 'telefono' => '56 5920 6025', 'direccion' => 'Av. Revolución 503, Local C, Col. Periodistas, Pachuca, Hgo.', 'ticket_pie' => '¡Gracias por tu compra! Síguenos en Instagram @mekamono', 'gasto_cats' => 'Renta,Luz e internet,Mercancía,Material de grabado,Empaques,Envíos,Publicidad,Sueldos,Comisiones,Otros'] as $k => $v)
+        if (val('SELECT 1 FROM ajustes WHERE clave=?', [$k]) === null) q('INSERT INTO ajustes (clave,valor) VALUES (?,?)', [$k, $v]);
+}
 $hay = (int) val('SELECT COUNT(*) FROM usuarios');
 $msg = '';
 if ($hay) { $msg = 'El panel ya está instalado. Entra en <a href="./">el panel</a>.'; }
@@ -44,11 +51,9 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($cfg['clave_instalacion']) && !hash_equals((string) $cfg['clave_instalacion'], $clave)) $msg = 'La clave de instalación no es correcta.';
     elseif (!$nombre || !filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($pass) < 8) $msg = 'Escribe nombre, un correo válido y una contraseña de al menos 8 caracteres.';
     else {
-        $n = mk_importar_catalogo(dirname(__DIR__) . '/productos.js');
+        $n = (int) val('SELECT COUNT(*) FROM productos WHERE activo=1');
         insert('usuarios', ['nombre' => $nombre, 'email' => $email, 'pass_hash' => password_hash($pass, PASSWORD_DEFAULT), 'rol' => 'dueno', 'activo' => 1, 'creado' => ahora()]);
-        foreach (['negocio' => 'MEKAMONO', 'telefono' => '56 5920 6025', 'direccion' => 'Av. Revolución 503, Local C, Col. Periodistas, Pachuca, Hgo.', 'ticket_pie' => '¡Gracias por tu compra! Síguenos en Instagram @mekamono', 'gasto_cats' => 'Renta,Luz e internet,Mercancía,Material de grabado,Empaques,Envíos,Publicidad,Sueldos,Comisiones,Otros'] as $k => $v)
-            q('INSERT INTO ajustes (clave,valor) VALUES (?,?)', [$k, $v]);
-        $msg = "Listo. Se importaron $n productos. Ya puedes <a href=\"./\">entrar al panel</a>.";
+        $msg = "Listo. Tu panel tiene $n productos. Ya puedes <a href=\"./\">entrar al panel</a>.";
         $hay = 1;
     }
 }
@@ -56,10 +61,10 @@ elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <link rel="stylesheet" href="assets/panel.css"></head><body class="login">
 <form class="login-card" method="post">
 <img src="../img/logo.webp" alt="MEKAMONO" class="login-logo">
-<h1>Instalar panel</h1>
+<h1>Crear tu cuenta</h1>
 <?php if ($msg): ?><p class="alerta"><?= $msg ?></p><?php endif; ?>
 <?php if (!$hay): ?>
-<p class="muted">Crea la cuenta del Dueño. Después podrás agregar hasta <?= MK_MAX_USUARIOS ?> usuarios.</p>
+<p class="muted">Crea la cuenta del Dueño con la clave que te dio APARECE. Después podrás agregar hasta <?= MK_MAX_USUARIOS ?> usuarios.</p>
 <?php if (!empty(mk_config()['clave_instalacion'])): ?><label>Clave de instalación<input name="clave" type="password" required></label><?php endif; ?>
 <label>Nombre<input name="nombre" required></label>
 <label>Correo<input name="email" type="email" required></label>
