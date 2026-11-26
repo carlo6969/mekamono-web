@@ -25,6 +25,9 @@ function mk_config(): array {
         if (basename($d) === 'public_html') { $rutas[] = $p . '/mekamono-panel.config.php'; break; }
         $d = $p;
     }
+    // Alternativa en Hostinger cuando no se puede escribir fuera de public_html:
+    // public_html/demos/mekamono-privado/ (carpeta hermana, bloqueada con .htaccess y fuera del clon de Git).
+    $rutas[] = dirname(__DIR__, 3) . '/mekamono-privado/mekamono-panel.config.php';
     foreach ($rutas as $r) {
         if ($r && is_file($r)) { $cfg = require $r; return $cfg; }
     }

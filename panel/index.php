@@ -2,6 +2,7 @@
 declare(strict_types=1);
 require __DIR__ . '/inc/db.php';
 mk_errores(false);
+if (!mk_config()) { header('Location: instalar.php'); exit; }
 mk_sesion();
 header('X-Frame-Options: DENY');
 header('Referrer-Policy: same-origin');
