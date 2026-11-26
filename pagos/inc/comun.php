@@ -71,8 +71,9 @@ function mkp_catalogo(): array {
     if ($cat !== null) return $cat;
     $panel = __DIR__ . '/../../panel/inc/catalogo.php';
     if (is_file($panel)) { require_once $panel; }
-    if (function_exists('mk_catalogo')) { $list = (array) mk_catalogo(); }
-    else {
+    $list = null;
+    if (function_exists('mk_catalogo')) { try { $list = (array) mk_catalogo(); } catch (Throwable $e) { mkp_log('error_catalogo', ['e' => $e->getMessage()]); $list = null; } }
+    if (!$list) {
         $js = (string) @file_get_contents(__DIR__ . '/../../productos.js');
         $i = strpos($js, 'MK_P='); $a = $i === false ? false : strpos($js, '[', $i); $b = strrpos($js, ']');
         $list = ($a !== false && $b !== false) ? (array) json_decode(substr($js, $a, $b - $a + 1), true) : [];
