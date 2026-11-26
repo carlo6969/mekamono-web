@@ -364,7 +364,7 @@ section{position:relative}
 .times{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;max-height:118px;overflow:auto}
 .times button{padding:8px 12px;border-radius:10px;border:1px solid var(--line);font-size:13.5px;transition:.2s}
 .times button.on{background:var(--tx);color:#111;border-color:var(--tx)}
-.ag-f{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.ag-f{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}.ag-f label:last-child{grid-column:1/-1}
 .faq{padding:120px 0}
 .faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:start}
 .faq-list details{border-bottom:1px solid var(--line);padding:6px 0}
@@ -488,6 +488,8 @@ section{position:relative}
 .tot b{font:700 26px var(--fd)}
 .dr-foot .btn{width:100%}
 .dr-note{font-size:12px;color:var(--dmut);text-align:center}
+@media (max-width:640px){.hd-act a.ib[href="panel/"]{display:none}}
+.cr-ok{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.35;color:#4b4945;cursor:pointer}.cr-ok input{width:18px!important;height:18px!important;flex-shrink:0;margin-top:1px;accent-color:var(--dk)}
 .srch .ov-bg{background:rgba(5,5,6,.85)}
 .srch-card{position:relative;width:min(760px,92vw);margin:9vh auto 0;animation:pop .35s var(--ease)}
 .srch-in{display:flex;align-items:center;gap:12px;border-bottom:2px solid var(--gold);padding:10px 4px}
@@ -530,6 +532,7 @@ section{position:relative}
 <a href="#inicio" class="brand" aria-label="MEKAMONO, ir al inicio"><img class="brand-ico" src="img/avatar.webp" alt="" width="40" height="40"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO" width="151" height="17"></a>
 <nav class="nav"><a href="#tienda">Tienda</a><a href="#lab">Personaliza <span class="new">LAB</span></a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#visitanos">Visítanos</a></nav>
 <div class="hd-act">
+<a class="ib" href="panel/" aria-label="Acceso al panel" title="Acceso"><svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
 <span class="status" data-status><i></i><b>Pachuca, Hgo.</b></span>
 <button class="ib" data-search aria-label="Buscar"><svg class="ico" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
 <button class="ib" data-cart aria-label="Abrir carrito"><svg class="ico" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" data-count>0</span></button>
@@ -537,7 +540,7 @@ section{position:relative}
 </div>
 </div>
 </header>
-<nav class="mm" id="mm"><a href="#tienda">Tienda</a><a href="#lab">Personaliza</a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a><a class="btn btn-gold" href="#tienda">Comprar ahora</a></nav>
+<nav class="mm" id="mm"><a href="#tienda">Tienda</a><a href="#lab">Personaliza</a><a href="#grabado">Grabado láser</a><a href="#nosotros">Nosotros</a><a href="#opiniones">Opiniones</a><a href="#visitanos">Visítanos</a><a href="panel/">Acceso</a><a class="btn btn-gold" href="#tienda">Comprar ahora</a></nav>
 
 <main id="inicio">
 <section class="hero">
@@ -723,7 +726,7 @@ section{position:relative}
 <p>Elige día y hora; te confirmamos por WhatsApp y tenemos tu pieza lista para grabar.</p>
 <div class="days" id="agDays"></div>
 <div class="times" id="agTimes"></div>
-<div class="ag-f"><label class="fl">Tu nombre<input id="agName" placeholder="Nombre" autocomplete="name"></label><label class="fl">¿Qué quieres grabar?<select id="agWhat"><option>Esclava con nombre o fecha</option><option>Collar con foto o mirada</option><option>Placa militar</option><option>Esclavas en dúo</option><option>Regalo (aún no sé qué)</option></select></label></div>
+<div class="ag-f"><label class="fl">Tu nombre<input id="agName" placeholder="Nombre" autocomplete="name"></label><label class="fl">Tu WhatsApp<input id="agWa" type="tel" inputmode="numeric" maxlength="14" placeholder="10 dígitos" autocomplete="tel-national"></label><label class="fl">¿Qué quieres grabar?<select id="agWhat"><option>Esclava con nombre o fecha</option><option>Collar con foto o mirada</option><option>Placa militar</option><option>Esclavas en dúo</option><option>Regalo (aún no sé qué)</option></select></label></div>
 <button class="btn btn-wa" style="width:100%" id="agSend"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.47a.9.9 0 0 0-.66.31 2.77 2.77 0 0 0-.86 2.06 4.8 4.8 0 0 0 1 2.56 11 11 0 0 0 4.22 3.73c1.57.68 2.19.74 2.98.62a2.54 2.54 0 0 0 1.67-1.18 2.07 2.07 0 0 0 .14-1.18c-.06-.1-.22-.16-.47-.28z"/></svg>Agendar por WhatsApp</button>
 </div>
 </div>
@@ -752,7 +755,7 @@ section{position:relative}
 <div class="ft-grid">
 <div><img class="brand-ico" src="img/avatar.webp" alt="" width="44" height="44" style="width:44px;height:44px"><img class="brand-word" src="img/logo.webp" alt="MEKAMONO"><p>En Mekamono no creamos accesorios, inmortalizamos símbolos. Bisutería de acero inoxidable con grabado láser en Pachuca, Hgo.</p><div class="pay"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>OXXO</span></div></div>
 <div><h6>Tienda</h6><ul id="ftCats"></ul></div>
-<div><h6>Ayuda</h6><ul><li><a href="#lab">Simulador de grabado</a></li><li><a href="#grabado">Servicio de grabado</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#visitanos">Agenda tu visita</a></li></ul></div>
+<div><h6>Ayuda</h6><ul><li><a href="#lab">Simulador de grabado</a></li><li><a href="#grabado">Servicio de grabado</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="#visitanos">Agenda tu visita</a></li><li><a href="panel/">Acceso</a></li></ul></div>
 <div><h6>Contacto</h6><ul><li><a href="#" data-wa="Hola MEKAMONO 🐵">WhatsApp 56 5920 6025</a></li><li><a href="mailto:mekamono.mx@gmail.com">mekamono.mx@gmail.com</a></li><li><a href="https://www.instagram.com/mekamono" target="_blank" rel="noopener">Instagram @mekamono</a></li><li><a href="#visitanos">Av. Revolución 503, Local C</a></li></ul></div>
 </div>
 <div class="ft-bot"><span>© 2026 MEKAMONO · Pachuca de Soto, Hidalgo</span><span>Sitio de demostración creado por <a href="https://www.apareceweb.com" target="_blank" rel="noopener">APARECE</a></span></div>
