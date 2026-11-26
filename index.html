@@ -779,7 +779,8 @@ section{position:relative}
 <div class="ov lb" id="lb" hidden><div class="ov-bg" data-close></div><button class="x" data-close aria-label="Cerrar">×</button><div class="lb-card"><img id="lbImg" alt=""></div></div>
 <div class="toast" id="toast" role="status"></div>
 
-<script src="productos.js"></script>
+<script src="panel/api/catalogo.php"></script>
+<script>/* Catálogo: lo manda el panel; si el panel no responde, se usa productos.js */if(!window.MK_PANEL)document.write('<script src="productos.js"><\/script>')</script>
 <script src="app.js"></script>
 <script src="lab.js"></script>
 </body>
