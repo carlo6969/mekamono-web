@@ -4,6 +4,7 @@
  * Funciones compartidas. Las credenciales NUNCA van en este repositorio (es público):
  * se leen del archivo de configuración del panel, fuera de public_html:
  *   /home/<usuario>/domains/apareceweb.com/mekamono-panel.config.php
+ *   o, si no se puede escribir ahí, public_html/demos/mekamono-privado/mekamono-panel.config.php
  * Ver pagos/config.ejemplo.php para las claves que usa este módulo.
  */
 declare(strict_types=1);
@@ -11,6 +12,8 @@ declare(strict_types=1);
 function mkp_config(): array {
     static $cfg = null;
     if ($cfg !== null) return $cfg;
+    $db = __DIR__ . '/../../panel/inc/db.php';
+    if (!function_exists('mk_config') && is_file($db)) { require_once $db; }
     if (function_exists('mk_config')) { $cfg = (array) mk_config(); return $cfg; }
     $file = getenv('MK_PANEL_CONFIG') ?: '';
     if (!$file) {
@@ -72,7 +75,7 @@ function mkp_catalogo(): array {
     $panel = __DIR__ . '/../../panel/inc/catalogo.php';
     if (is_file($panel)) { require_once $panel; }
     $list = null;
-    if (function_exists('mk_catalogo')) { try { $list = (array) mk_catalogo(); } catch (Throwable $e) { mkp_log('error_catalogo', ['e' => $e->getMessage()]); $list = null; } }
+    if (function_exists('mk_catalogo') && mkp_c('db')) { try { $list = (array) mk_catalogo(); } catch (Throwable $e) { mkp_log('error_catalogo', ['e' => $e->getMessage()]); $list = null; } }
     if (!$list) {
         $js = (string) @file_get_contents(__DIR__ . '/../../productos.js');
         $i = strpos($js, 'MK_P='); $a = $i === false ? false : strpos($js, '[', $i); $b = strrpos($js, ']');
@@ -127,6 +130,10 @@ function mkp_carrito(array $items): array {
 function mkp_log(string $tipo, array $datos): void {
     $dir = getenv('MK_PANEL_CONFIG') ? dirname((string) getenv('MK_PANEL_CONFIG')) : null;
     if (!$dir) { $d = __DIR__; while ($d !== dirname($d)) { if (basename($d) === 'public_html') { $dir = dirname($d); break; } $d = dirname($d); } }
+    if ($dir && !is_file($dir . '/mekamono-panel.config.php')) {
+        $alt = dirname(__DIR__, 3) . '/mekamono-privado';   /* carpeta privada hermana del clon (bloqueada con .htaccess) */
+        if (is_dir($alt)) $dir = $alt;
+    }
     if (!$dir || !is_writable($dir)) return;
     @file_put_contents($dir . '/mekamono-pagos.log.jsonl', json_encode(['t' => date('c'), 'tipo' => $tipo] + $datos, JSON_UNESCAPED_UNICODE) . "\n", FILE_APPEND | LOCK_EX);
 }
