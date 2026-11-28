@@ -5,6 +5,13 @@ require_once __DIR__ . '/comun.php';
 
 function mkp_envia_base(): string { return mkp_c('envia_env', 'sandbox') === 'production' ? 'https://api.envia.com' : 'https://api-test.envia.com'; }
 
+/* Errores por paquetería de la última cotización (para la página de configuración). */
+function mkp_envia_errores(?string $c = null, int $code = 0, $msg = ''): array {
+    static $e = [];
+    if ($c !== null) $e[$c] = trim('HTTP ' . $code . ' ' . (is_string($msg) ? $msg : json_encode($msg, JSON_UNESCAPED_UNICODE)));
+    return $e;
+}
+
 function mkp_cp_info(string $cp): array {
     $r = mkp_http('GET', 'https://geocodes.envia.com/zipcode/MX/' . rawurlencode($cp), ['Accept: application/json']);
     $d = is_array($r['json']) ? ($r['json'][0] ?? $r['json']) : [];
@@ -48,6 +55,7 @@ function mkp_cotizar(string $cp, int $piezas, float $valor, ?string $soloCarrier
     }
     $rates = [];
     foreach (mkp_http_multi($reqs, 15) as $c => $r) {
+        if (empty($r['json']['data'])) mkp_envia_errores($c, (int) ($r['code'] ?? 0), $r['json']['error']['message'] ?? ($r['json']['message'] ?? ($r['error'] ?: (empty($r['code']) ? 'sin respuesta de Envia' : ''))));
         foreach ((array) ($r['json']['data'] ?? []) as $d) {
             if (!is_array($d) || !isset($d['totalPrice'])) continue;
             $dias = (string) ($d['deliveryEstimate'] ?? '');
@@ -57,5 +65,8 @@ function mkp_cotizar(string $cp, int $piezas, float $valor, ?string $soloCarrier
         }
     }
     usort($rates, fn($a, $b) => $a['precio'] <=> $b['precio']);
+    /* Envío gratis a partir de cierto monto: la opción más barata queda en $0 (MekaMono absorbe ese costo). */
+    $gratis = (float) mkp_c('envio_gratis_desde', 0);
+    if ($rates && $gratis > 0 && $valor >= $gratis) { $rates[0]['precio'] = 0.0; $rates[0]['desc'] .= ' · Envío gratis'; }
     return ['demo' => false, 'destino' => $info['nombre'], 'tarifas' => array_slice($rates, 0, 8)];
 }

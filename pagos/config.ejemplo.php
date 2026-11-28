@@ -1,7 +1,8 @@
 <?php
 /*
  * EJEMPLO. No pongas datos reales aquí: este repositorio es público.
- * Copia estas claves dentro del archivo de configuración del panel, que vive FUERA de public_html:
+ * Lo más fácil: captúralas en pagos/configurar.php (solo Dueño o clave de instalación).
+ * O copia estas claves dentro del archivo de configuración del panel, que vive FUERA de public_html:
  *   /home/<usuario>/domains/apareceweb.com/mekamono-panel.config.php
  * (el mismo archivo que usa el panel para MySQL; devuelve un array PHP).
  */
@@ -18,12 +19,15 @@ return [
     // Dirección desde donde salen los paquetes (la tienda)
     'origen' => [
         'name' => 'MEKAMONO', 'company' => 'MEKAMONO', 'email' => 'mekamono.mx@gmail.com', 'phone' => '5659206025',
-        'street' => 'Av. Revolución', 'number' => '503 Local C', 'district' => 'Periodistas',
-        'city' => 'Pachuca de Soto', 'state' => 'HG', 'postalCode' => '42060',
+        'street' => 'Calle', 'number' => '000', 'district' => 'Colonia',
+        'city' => 'Pachuca de Soto', 'state' => 'HG', 'postalCode' => '42000',
     ],
 
     // Caja estándar y peso (kg) para cotizar
-    'paquete' => ['largo' => 20, 'ancho' => 15, 'alto' => 8, 'peso_base' => 0.2, 'peso_por_pieza' => 0.08],
+    'paquete' => ['largo' => 30, 'ancho' => 22, 'alto' => 10, 'peso_base' => 1, 'peso_por_pieza' => 0],
+
+    // Envío gratis desde este subtotal (0 = el cliente siempre paga el envío)
+    'envio_gratis_desde' => 0,
 
     // URL pública de la tienda (con / al final)
     'sitio_url' => 'https://apareceweb.com/demos/mekamono/',

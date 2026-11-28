@@ -60,7 +60,7 @@ function mkp_http_multi(array $reqs, int $timeout = 12): array {
     do { $st = curl_multi_exec($mh, $run); if ($run) curl_multi_select($mh, 1.0); } while ($run && $st === CURLM_OK);
     $out = [];
     foreach ($hs as $k => $h) {
-        $out[$k] = ['code' => (int) curl_getinfo($h, CURLINFO_HTTP_CODE), 'json' => json_decode((string) curl_multi_getcontent($h), true)];
+        $out[$k] = ['code' => (int) curl_getinfo($h, CURLINFO_HTTP_CODE), 'json' => json_decode((string) curl_multi_getcontent($h), true), 'error' => curl_error($h)];
         curl_multi_remove_handle($mh, $h); curl_close($h);
     }
     curl_multi_close($mh);
