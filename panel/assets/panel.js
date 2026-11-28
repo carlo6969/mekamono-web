@@ -98,6 +98,7 @@ const MENU = [
 document.getElementById('app').innerHTML =
   '<div class="lay"><aside class="side" id="side"><div class="marca"><img src="../img/logo.webp" alt="MEKAMONO"></div><div class="plan">Panel · Plan Negocio</div><nav>' +
   MENU.filter(m => m === '-' || !m[2] || DUENO).map(m => m === '-' ? '<div class="sep"></div>' : '<a href="#' + m[0] + '" data-r="' + m[0] + '">' + ico(m[0]) + '<span>' + m[1] + '</span>' + (m[0] === 'ventas' ? '<i class="bad" id="badPed" hidden></i>' : '') + '</a>').join('') +
+  (DUENO ? '<a href="../pagos/configurar.php">' + ico('gastos') + '<span>Pagos y envíos</span></a>' : '') +
   '<div class="sep"></div><a href="../" target="_blank" rel="noopener">' + ico('web') + '<span>Ver la tienda en línea</span></a></nav>' +
   '<div class="yo"><div><b>' + h(U.nombre) + '</b>' + (DUENO ? 'Dueño' : 'Vendedor') + '</div><a href="./?salir=1">Salir</a></div></aside>' +
   '<div style="flex:1;min-width:0"><div class="mtop"><button id="mMenu" aria-label="Menú">' + ico('menu').replace('<svg', '<svg width="22" height="22"') + '</button><img src="../img/logo.webp" alt="MEKAMONO"><span class="sp"></span><a class="btn mini oro" href="#pos">Vender</a></div>' +

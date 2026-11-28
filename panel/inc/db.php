@@ -12,7 +12,7 @@ declare(strict_types=1);
 date_default_timezone_set('America/Mexico_City');
 
 const MK_MAX_USUARIOS = 8;          // Plan Negocio: hasta 8 usuarios
-const MK_VERSION = '1.0';
+const MK_VERSION = '1.1';
 
 function mk_config(): array {
     static $cfg = null;
